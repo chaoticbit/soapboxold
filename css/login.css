@@ -1,0 +1,173 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 Feb, 2015, 10:44:29 PM
+    Author     : mihirk
+*/
+::-webkit-input-placeholder{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 80%;
+}
+::-moz-placeholder{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 80%;
+}
+:-moz-placeholder{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 80%;
+}
+:-ms-input-placeholder{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 80%;
+}
+.top-nav{
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+}
+ul.navbar{
+    display: inline-block;
+}
+ul.navbar > li{
+    display: inline-block;
+    padding: 10px 5px;
+}
+ul.navbar > li > a{
+    font-size: 10pt;
+    display: block;
+    color: #666 !important;
+    padding: 5px 15px 5px 15px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    transition: all 0.1s ease-in;
+}
+ul.navbar > li > a:visited{
+    color: #e5e5e5;
+    text-decoration: none;
+}
+ul.navbar > li > a:hover{
+    background: rgba(255,255,255,0.2);
+    color: #fff !important;
+}
+.title{
+    padding: 10px;
+}
+.subtitle{
+    text-align: center;
+    letter-spacing: 7px;
+    font-size: 90%;
+    text-transform: uppercase;
+}
+body.bg-blur{
+/*    background: url(../images/1322007.jpg) no-repeat center center fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: auto;
+    min-height: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
+.login-form, .info, .signup-form{
+    padding: 0 10px 0 10px;
+    position: relative;
+}
+.login-credential{
+    color: #888;
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0 5px 0;
+    background: transparent;    
+    border: 1px solid;
+    border-color: transparent transparent #ccc transparent;
+    color:#000;
+    font-family: 'Open Sans';
+    font-size: 12pt;
+}
+.login-submit{
+    margin: 0 0 5px 0;
+    border-color: #fff;
+}
+.signup-submit:disabled,.update-pwd-submit:disabled{
+    cursor: not-allowed;
+    border: 2px solid #ccc!important;
+    background: #ccc !important;
+}
+.signup-submit:disabled:hover,.update-pwd-submit:disabled:hover{
+    color: #999 !important;
+    background: #ccc !important;
+}
+.login-signup{
+    margin: 10px 0 5px 0;
+    border-color: #a20025;
+}
+.login-guest{
+    margin: 4px 0 5px 0;
+    border-color: #4390df;
+}
+a.reset-pwd{
+    font-family: 'Open Sans Bold';
+    color: #000 !important;
+    font-weight: bold;
+    font-size: 9pt !important;
+}
+.transparent-panel{
+    width: 100%;
+    padding: 10px;
+    margin: 25px auto 0 auto;
+    background: rgba(255,255,255,0.85);
+}
+.signup-username{
+/*    width: 65%;*/
+}
+.status-symbol{
+    font-size: 11pt;
+    padding-left: 15px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.signup-submit{
+    margin-top: 15px;
+    border-color: #fff;
+}
+.signup-help{
+    position: absolute;
+    top: 17px;
+    right: 0;
+}
+.invalid{
+    border-bottom: 1px solid #ff0000;
+}
+.login-signup-tips{
+    position: absolute;
+    box-shadow: 1px 1px 10px #333;
+    -webkit-box-shadow: 1px 1px 10px #333;
+    -moz-box-shadow: 1px 1px 10px #333;
+    position: absolute;
+    height: auto;
+    left: 27px;
+    padding: 10px;
+}
+.right-caret{
+    position: absolute;
+    left: -21px;
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.6);
+    z-index: 0;
+}
+.tip{
+    position: absolute;
+    left: -218px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.6);
+}

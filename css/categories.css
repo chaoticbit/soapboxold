@@ -1,0 +1,78 @@
+html,body{
+    background: #F7F7F7;
+}
+.container{
+    width: 100% !important;
+}
+.thread-container{
+    width: 100%;
+    padding-left: 250px;
+}
+.hover-gradient{
+    width: 100%;
+    height: 168px;
+    position: absolute;
+    bottom: 0;
+    background: url('../images/gradient_black.png');
+    background-repeat: repeat-x;
+}
+.block-flat{
+    border: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+.update-category{
+    width: auto;
+    border-color: #1E8CBE !important;
+}
+.defocus-panel{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.category .selected{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+}
+.center-icon{
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.cam:hover{
+    text-shadow: 0 0 20px rgba(255,255,255,0.7);
+}
+.editor-help-parent{
+    display: none;
+    position:fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.editor-help-child{
+    width: 500px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    margin: auto;
+    box-shadow: 0px 0px 5px #333;
+    -webkit-box-shadow: 0px 0px 5px #333;
+    -moz-box-shadow: 0px 0px 5px #333;
+    overflow: hidden;
+}
+.search-container{
+    background: #fff !important;
+}

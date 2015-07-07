@@ -1,0 +1,79 @@
+html,body{
+    background: #f7f7f7;
+}
+.container{
+    width: 100% !important;
+}
+.thread-container{
+    width: 100%;
+    padding-left: 250px;
+}
+.block-flat{
+    -webkit-border-radius: 3px;
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 0;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04);
+    padding: 10px;
+}
+.info-subgroup{
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.info-subgroup:hover{
+    background: #fafafa;
+}
+.new-info{
+    font-size: 100%;
+    font-family: 'Open Sans Light';
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 3px 5px;
+    margin: 0 !important;
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+}
+.new-info:focus{
+    border-color: #000;
+}
+.status-symbol{
+    font-size: 11pt;
+    padding-left: 15px;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+.new-avatar{
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.defocus-panel{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    overflow: auto;
+}
+.center-icon{
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.cam:hover{
+    text-shadow: 0 0 20px rgba(255,255,255,0.7);
+}

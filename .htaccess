@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule \.(css|jpe?g|gif|png|js|ico)$ - [L]
+RewriteRule ^([a-zA-Z0-9_]+)$ profile.php
+RewriteRule ^([a-zA-Z0-9_]+)/$ profile.php

@@ -1,0 +1,7 @@
+0	upvote
+1	reply
+2	r_reply
+3	thread
+4	upvote_to_reply
+
+create trigger notify_on_iReply after insert on reply for each row begin declare done int default false; set @tid=new.tid; declare i, j int default 0; declare cur cursor for select `tid`, `uid` from trackthread where tid=@tid; declare continue handler for not found set done=true; open cur; read_loop: loop fetch cursor1 into i, j; if done then leave read_loop; end if; set @rid=new.srno; set @uid=(select uid from reply where srno=@rid); set @username=(select concat(fname, ' ', lname) from extendedinfo where uid=@uid); insert into notifications values(concat(@username, ' replied on a thread you are tracking.'), 1, @rid, j); end loop; close cur; end$$

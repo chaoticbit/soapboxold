@@ -1,0 +1,241 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 9, 2015, 11:31:57 AM
+    Author     : atharvadandekar
+*/
+
+html,body{
+/*      background-color: #272930;*/
+    background: #f7f7f7;
+}
+.container{
+    width: 100% !important;
+}
+.readinglist-container{
+    width: 100%;
+    padding: 1px 0 0px 270px;
+}
+.right-pane{
+    height: 100%;
+    width: 25%;
+    right: 0;
+    position: fixed;
+    background-image: url('../images/noise.png');
+    background-repeat: repeat;
+    background-color: #272930;
+    
+}
+.mobile-reading-list{
+    background-image: url('../images/noise.png');
+    background-repeat: repeat;
+    background-color: #272930;
+    height: 100%;
+    display: none;
+}
+.readlist{
+    overflow-y: auto;
+}
+.readlist > ul > li{
+    width: 100%;
+}
+.readlist > ul > li{
+    border-bottom: 1px solid rgba(235,235,235,0.2);
+}
+.readlist > ul > li > a{
+    display: block;
+    padding: 10px 15px;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    border-right: 2px solid transparent;
+/*    background: rgba(101, 101, 103, 0.97);*/
+}
+.readlist > ul > li > a p:first-child{
+    font-size: 16px;
+}
+.readlist > ul > li > a p{
+    font-size: 13px;
+    font-family: 'Open Sans';
+}
+.readlist > ul > li > a:hover{
+    background-color: #06c;
+    color: #fff !important;
+}
+.readlist > ul > li > a:hover .tm{
+    color: #fff !important;
+}
+.active-readlist{
+    background-color: #06c;
+    color: #fff !important;
+}
+.active-readlist .tm{
+    color: #fff !important;
+}
+.featured-thumbnail{
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.2s ease-in;
+}
+.thread-owner-thumb{
+    width: 75px;
+    height: 75px;   
+    margin: -37.5px 10px 0 20px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    float: left;
+    -webkit-transition: all 0.2s ease-in;
+    background-color: #ccc;
+}
+.reply{
+    
+}
+.reply-owner-thumb{
+    width: 45px;
+    height: 45px;   
+    float: left;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    float: left;
+    -webkit-transition: all 0.2s ease-in;
+    background-color: #ccc;
+}
+
+.thread-title > h4{
+    color: #000;
+    transition: all 0.2s ease-in;
+}
+.thread-stat{
+    padding: 5px 20px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+.thread-stat:hover{
+    border-bottom-color: #1ba1e2;
+    color: #9a1616;
+}
+.thread-editor-title{
+    letter-spacing: 0.00em;
+    font-family: 'Open Sans Bold';
+    color: #000;
+    font-size: 20pt;
+    line-height: 1.5;    
+    padding-left: 0;
+}
+.thread-options-toggle{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+}
+.thread-options{
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    display: none;
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .15);
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
+    z-index: 800;
+}
+.reply-options{
+    right: -5px;
+}
+.options-toggle{
+    cursor: pointer;
+}
+.thread-options > li{
+    font-size: 10pt;
+    overflow: hidden;
+    white-space: nowrap;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+.thread-options > li:last-child{
+    border-bottom: 0;
+}
+.thread-options > li > a{
+    text-align: left;
+    padding: 7px 10px;
+    display: block;
+    color: inherit !important;
+    transition: background-color 0.2s ease-in;
+    -webkit-transition: background-color 0.2s ease-in;
+    -moz-transition: background-color 0.2s ease-in;
+}
+.thread-options > li:hover{
+    background: #3b5988;
+    color: #fff;
+}
+.thread-options > li > a > i{
+    padding-right: 5px;
+}
+.thread-description{
+    padding: 0 20px;
+    position: relative;
+}
+.thread-action{
+    padding: 8px 20px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease-in;
+    cursor: default;
+}
+.thread-action:hover{
+    border-bottom: 2px solid #1ba1e2;
+}
+.thread-action a{
+    color: #000 !important;
+    text-decoration: none !important;
+    cursor: default;
+}
+.thread-action a:visited{
+    color: #000 !important;
+}
+.comment{
+    font-family: sans-serif !important;
+    line-height: 1.3;
+    color: rgba(0,0,0,0.7);
+    letter-spacing: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.block{
+    display: block;
+}
+.reply-replies > .pure-g{
+    padding-bottom: 5px;
+}
+.reply-replies > .pure-g:last-child{
+    padding: 0 !important;
+}
+.activeread{
+    color: #fff !important;
+    background: rgba(255,255,255,0.1) !important;
+    border-right: 2px solid #2494F2 !important;
+}
+.readlist > ul > li > a.activeread:hover .tm{
+    color: #999999 !important;
+}
+pre{
+    font-size: 11pt;
+    margin: 0;
+    padding: 5px;
+    color: rgba(150,10,10,0.9);
+    background: #eee;
+    background: url('../images/blueprint-dark.png') repeat fixed;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.2) inset;
+}

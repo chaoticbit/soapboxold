@@ -1,0 +1,451 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31 Mar, 2015, 3:11:05 PM
+    Author     : mihirk
+*/
+.add-comment::-webkit-input-placeholder{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 80%;
+}
+.add-comment::-moz-placeholder{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 80%;
+}
+.add-comment:-moz-placeholder{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 80%;
+}
+.add-comment:-ms-input-placeholder{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 80%;
+}
+html{
+     background: #f7f7f7;
+}
+body{
+     background: #f7f7f7;
+}
+.container{
+    width: 100% !important;
+}
+.thread-container{
+    width: 100%;
+    padding: 1px 0 20px 270px;
+    position: relative;
+}
+.stat-title{
+    text-transform: uppercase;
+    font-size: small;
+    letter-spacing: 2px;
+}
+
+/*test*/
+.featured-thumbnail{
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.2s ease-in;
+}
+.thread-owner-thumb{
+    width: 75px;
+    height: 75px;   
+    margin: -37.5px 10px 0 20px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    float: left;
+    -webkit-transition: all 0.2s ease-in;
+    background-color: #ccc;
+}
+.reply{
+    min-height: 180px;
+}
+.reply-owner-thumb{
+    width: 45px;
+    height: 45px;   
+    float: left;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    float: left;
+    -webkit-transition: all 0.2s ease-in;
+    background-color: #ccc;
+}
+
+.thread-title > h4{
+    color: #000;
+    transition: all 0.2s ease-in;
+}
+.thread-stat{
+    padding: 5px 20px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+.thread-stat:hover{
+    border-bottom-color: #1ba1e2;
+    color: #9a1616;
+}
+.thread-editor-title{
+    letter-spacing: 0.00em;
+    font-family: 'Open Sans Bold';
+    color: #000;
+    font-size: 20pt;
+    line-height: 1.5;    
+    padding-left: 0;
+}
+.thread-options-toggle{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+}
+.thread-options{
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    display: none;
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .15);
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
+    z-index: 800;
+}
+.reply-options{
+    right: -5px;
+}
+.options-toggle{
+    cursor: pointer;
+}
+.thread-options > li{
+    font-size: 10pt;
+    overflow: hidden;
+    white-space: nowrap;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+.thread-options > li:last-child{
+    border-bottom: 0;
+}
+.thread-options > li > a{
+    text-align: left;
+    padding: 7px 10px;
+    display: block;
+    color: inherit !important;
+    transition: background-color 0.2s ease-in;
+    -webkit-transition: background-color 0.2s ease-in;
+    -moz-transition: background-color 0.2s ease-in;
+}
+.thread-options > li:hover{
+    background: #3b5988;
+    color: #fff;
+}
+.thread-options > li > a > i{
+    padding-right: 5px;
+}
+.thread-description{
+    padding: 0 20px;
+    position: relative;
+}
+.thread-action{
+    padding: 8px 20px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+.thread-action:hover{
+    border-bottom: 2px solid #1ba1e2;
+}
+.thread-action a{
+    color: #000 !important;
+    text-decoration: none !important;
+}
+.thread-action a:visited{
+    color: #000 !important;
+}
+.active-action{
+    border-bottom: 2px solid #81c546;
+}
+.medium-editor-toolbar{
+    z-index: 999999 !important;
+}
+.editable{
+    min-height: 100px;
+    margin: 5px 0;
+    font-family: 'Open Sans';
+    font-size: 12pt;
+    cursor: text;
+    width: 100%;
+    letter-spacing: normal;
+    overflow: auto;
+}
+.editable:empty:not(:focus):before{
+    content:attr(data-text);
+    color: #ccc;
+}
+.editable p{
+    font-family: 'Open Sans';
+    font-size: 12pt;
+    margin: 0 !important;
+}
+.editable blockquote{
+    background: none;
+    color: #000;
+    font-style: normal;
+}
+.editable pre, pre{
+    font-size: 11pt;
+    margin: 0;
+    padding: 5px;
+    color: rgba(150,10,10,0.9);
+    background: #eee;
+    background: url('../images/blueprint-dark.png') repeat fixed;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.2) inset;
+}
+.editable ul{
+    padding-left: 40px;
+    list-style-type: initial;
+}
+.editable span,.thread-description span{
+    font-family: inherit !important;
+    font-size: inherit !important;
+}
+.btn-submit-reply{
+    border-color: #1ba1e2;
+}
+.add-comment{
+    padding: 5px 0;
+    border-bottom-color: rgba(0,0,0,0.1);
+}
+.gradient-stat{
+    cursor: pointer;
+}
+.gradient-stat:hover{
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #f8f8f8;
+  background-image: -moz-linear-gradient(center top, #ffffff 50%, #f8f8f8 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f8f8f8));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f8f8f8);
+  background-image: -o-linear-gradient(top, #ffffff, #f8f8f8);
+  background-image: linear-gradient(to bottom, #ffffff 50%, #f8f8f8 100%);
+  border-color: #DEDFE0 #C8C8C8 #C8C8C8;
+  border-image: none;
+  border-right: 1px solid #C8C8C8;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08);
+  color: #333333;
+}
+.comment{
+    font-family: sans-serif !important;
+    line-height: 1.3;
+    color: rgba(0,0,0,0.7);
+    letter-spacing: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.block{
+    display: block;
+}
+.reply-replies > .pure-g{
+    padding-bottom: 5px;
+}
+.reply-replies > .pure-g:last-child{
+    padding: 0 !important;
+}
+.highlight-bg{
+    -webkit-box-shadow: 0px 0px 7px 2px #09f;
+    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1) !important;
+    -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1) !important;
+    -moz-transition: all 0.2s cubic-bezier(0.6, -0.28, 0.74, 0.05) !important;
+}
+.delete-r2r{
+    color: #eee;
+    cursor: pointer;
+}
+.delete-r2r:hover{
+    color: #bbb;
+}
+.theatre{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;    
+    overflow: auto;
+}
+.edit-thread,.stat-defocus{
+    height: auto;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    margin: auto;
+    box-shadow: 0px 0px 5px #333;
+    -webkit-box-shadow: 0px 0px 5px #333;
+    -moz-box-shadow: 0px 0px 5px #333;
+}
+.stat-defocus{
+    max-height: 500px;
+    overflow: auto;
+}
+.edit-thread .editable{
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.edit-thread .pure-u-1{
+    padding: 10px 10px 5px 10px;
+}
+.edit-thread .pure-u-1:nth-child(3){
+    padding: 0 10px 10px 10px;
+}
+.edit-thread .pure-u-1:first-child{
+    padding: 0;
+}
+.edit-thread .edit-thumbnail{
+    width: 100%;
+    background: #f5f5f5;
+    height: 300px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: -webkit-grabbing;
+    position: relative;
+    text-align: center;
+    border: 1px solid transparent;
+}
+.btn-save-edit{
+    width: auto;
+    border-color: #1ba1e2;
+}
+.btn-cancel-edit{
+    margin-left: 10px;
+    width: auto;
+    border-color: #555555;
+}
+.upvotes-list > ul > li > a{
+    display: block;
+    padding: 4px 10px 4px 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+.upvotes-list > ul > li > a:hover{
+    background: #f5f5f5;
+}
+.upvotes-list > ul > li > a:hover .thumb-pic{
+    transition: border-color 0.2s ease-in-out;
+    -webkit-transition: border-color 0.2s ease-in-out;
+    -moz-transition: border-color 0.2s ease-in-out;
+    border-color: #09f;
+}
+.upvotes-list > ul > li > a p{
+    padding: 15px 0 0 10px;
+}
+.btn-close-defocus{
+    font-size: 20px;
+    cursor: pointer;
+    padding: 3px 0 0 0;
+}
+.defocus-head{
+    position: fixed;
+    width: inherit;
+}
+.block-flat{
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+}
+.thread-editor-title {
+    letter-spacing: 0.00em;
+    font-family: 'Open Sans Bold';
+    color: #000;
+    font-size: 20pt;
+    line-height: 1.5;
+    padding-left: 0;
+}
+.txterr {
+  background: rgba(255, 7, 5, 0.28);
+}
+.active-edit{
+    box-shadow: 0px 0px 1px 2px #3b5988;
+    filter: drop-shadow(0px 0px 3px #3b5988);
+    -webkit-filter: drop-shadow(0px 0px 3px #3b5988);
+}
+.active-reposition{
+    cursor: -webkit-grabbing;
+}
+.eThreadWrap{
+    margin: auto;
+}
+ins{
+    text-decoration: none;
+    background: rgba(0,245,0,0.2) !important;
+    display: block;
+}
+del{
+    text-decoration: none;
+    background: rgba(245,0,0,0.1) !important;
+    display: block;
+}
+ins p,ins blockquote,del p,del blockquote{
+    background: inherit !important;
+}
+.editHistoryChild{
+    padding:0 0 0 265px;
+}
+.image-theatre-wrapper {
+    background-color: rgba(0, 0, 0, 0.9);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 99999;
+    display: block;
+}
+.area-photo {
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+.theatre-photo-container {
+    display: none;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 20px 0 20px 0;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+}
+img.theatre-photo {
+    max-width: 100%;
+    max-height: 100%;
+}
