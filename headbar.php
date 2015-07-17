@@ -1,4 +1,4 @@
-<div class="headbar-mobile">
+<div class="headbar-mobile" style="padding-top: 20px;height: 60px;">
     <i class="fa fa-navicon fa-fw fg-white flt-left toggle-stack"></i>
     <input type="text" class="search-mobile" placeholder="Search" />
     <i class="fa fa-times-circle fa-fw fg-white flt-right cancel-text"></i>
